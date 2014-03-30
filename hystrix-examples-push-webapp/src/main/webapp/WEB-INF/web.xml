@@ -37,8 +37,12 @@
 		<servlet-name>HystrixMetricsStreamPublisher</servlet-name>
 		<servlet-class>com.netflix.hystrix.contrib.metrics.eventpublisher.HystrixMetricsStreamPublisher</servlet-class>
 		<init-param>
-			<param-name>delay</param-name>
+			<param-name>pollerDelay</param-name>
 			<param-value>550</param-value>
+		</init-param>
+		<init-param>
+			<param-name>publishUrl</param-name>
+			<param-value>http://localhost:9090/hystrix.publish</param-value>
 		</init-param>
 	</servlet>
 

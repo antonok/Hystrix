@@ -9,7 +9,9 @@ dependencies {
     compile project(':hystrix-examples')
     compile project(':hystrix-contrib:hystrix-request-servlet')
     compile project(':hystrix-contrib:hystrix-metrics-event-publisher')
-        compile project(':hystrix-contrib:hystrix-metrics-event-stream')
+    compile project(':hystrix-contrib:hystrix-metrics-event-stream')
+    compile 'log4j:log4j:1.2.17'
+    compile 'org.slf4j:slf4j-log4j12:1.7.0'
 }
 
 jettyRun {
